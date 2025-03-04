@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2Z0JYWN7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K2Z0JYWN7Q');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sehri.in - Premium Sehri Meal Delivery in Hyderabad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0f142b",
+              secondary: "#e2c675",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .hero-section {
+      position: relative;
+      overflow: hidden;
+      }
+      .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 20, 43, 0.8);
+      z-index: 1;
+      }
+      .hero-section video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      }
+      .hero-section > .container {
+      position: relative;
+      z-index: 2;
+      }
+      .menu-card {
+      transition: all 0.3s ease;
+      }
+      .menu-card:hover {
+      transform: translateY(-5px);
+      }
+      .testimonial-card {
+      transition: all 0.3s ease;
+      }
+      .testimonial-card:hover {
+      transform: scale(1.02);
+      }
+      .cta-button {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      }
+      .cta-button:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.6s;
+      }
+      .cta-button:hover:after {
+      transform: translate(-50%, -50%) scale(1);
+      }
+      .glass-effect {
+      backdrop-filter: blur(10px);
+      background: rgba(15, 20, 43, 0.8);
+      }
+      @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+      }
+      .float-animation {
+      animation: float 3s ease-in-out infinite;
+      }
+      .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .hover-scale {
+      transition: transform 0.3s ease;
+      }
+      .hover-scale:hover {
+      transform: scale(1.05);
+      }
+      .shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      }
+      @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+      }
+    </style>
+  </head>
+
+<body class="bg-primary text-white font-['Belleza']">
+    <header class="fixed w-full z-50 glass-effect">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <img src="img\Sehri.in (1).png" alt="Sehri.in Logo" class="h-[80px] object-contain">
+                <div class="hidden md:flex space-x-8 lg:space-x-12">
+                    <a href="#home" class="hover:text-secondary transition-colors text-base lg:text-lg">home</a>
+                    <a href="#menu" class="hover:text-secondary transition-colors text-base lg:text-lg">Menu</a>
+                    <a href="#why-us" class="hover:text-secondary transition-colors text-base lg:text-lg">Why choose us?</a>
+                    <a href="#testimonials" class=" hover:text-secondary transition-colors text-base lg:text-lg">Testimonials</a>
+                    <a href="#plans" class=" hover:text-secondary transition-colors text-base lg:text-lg">Plans</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        <i class="ri-menu-line ri-2x"></i>
+                    </button>
+                </div>
+                <a href="https://form.jotform.com/240465778049467" target="_blank" class="hidden md:block bg-secondary text-primary px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all text-lg font-semibold font-['Inter'] whitespace-nowrap">
+                    Subscription
+                    </a>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-primary w-full absolute top-[76px] left-0 z-50 border-t border-gray-800">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#home" class="block hover:text-secondary transition-colors text-base">home</a>
+                    <a href="#menu" class="block hover:text-secondary transition-colors text-base">Menu</a>
+                    <a href="#why-us" class="block hover:text-secondary transition-colors text-base">Why choose us?</a>
+                    <a href="#testimonials" class="block hover:text-secondary transition-colors text-base">Testimonials</a>
+                    <a href="#plans" class="block hover:text-secondary transition-colors text-base">Plans</a>
+                    <a href="https://form.jotform.com/240465778049467" target="_blank" class="block w-full bg-secondary text-primary px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all text-lg font-semibold text-center whitespace-nowrap">
+                        Subscription
+                        </a>
+            </div>
+        </div>
+    </header>
+    <section id="home" class="hero-section min-h-screen flex items-center pt-20">
+        <video autoplay loop muted playsinline>
+            <source src="./vid/Untitled design.mp4" type="video/mp4">
+        </video>
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-7xl font-bold mb-8">Sehri, Just Like Home – Hot, Fresh & On Time!</h1>
+                <p class="text-2xl mb-12 text-gray-300">Tired of skipping Sehri or eating instant food? Get homemade,
+                    nutritious meals delivered to your doorstep every night before Fajr!</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center px-4 sm:px-0">
+                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-6 sm:px-10 py-3 sm:py-4 !rounded-button text-lg sm:text-xl font-semibold cta-button font-['Inter'] whitespace-nowrap text-center">
+                        Order Now
+                        </a>
+                        <a href="https://form.jotform.com/240465778049467" target="_blank" class="border-2 border-secondary px-6 sm:px-10 py-3 sm:py-4 !rounded-button text-lg sm:text-xl font-semibold hover:bg-secondary hover:text-primary transition-all font-['Inter'] whitespace-nowrap text-center">
+                        Subscriptions Plans
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Weekly Menu</h2>
+            <div class="relative">
+                <div class="overflow-x-auto no-scrollbar">
+                    <div id="menu-slider" class="flex gap-4">
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Monday</div>
+                                <img src="./img/1.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Monday menu">
+                                <h3 class="text-xl font-semibold mb-2">Kichdi Khatta & Kheema</h3>
+                                <!-- <p class="text-gray-400 mb-4">Flaky parathas served with curry, eggs, and premium accompaniments</p> -->
+                                <div class="flex justify-between items-center mt-auto">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Tuesday</div>
+                                <img src="./img/2.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Tuesday menu">
+                                <h3 class="text-xl font-semibold mb-2">Dal Rice, Fried Mutton</h3>
+                                <!-- <p class="text-gray-400 mb-4">Fresh idli with sambar and coconut chutney</p> -->
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Wednesday</div>
+                                <img src="./img/3.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Wednesday menu">
+                                <h3 class="text-xl font-semibold mb-2">Mutton Tahari</h3>
+                                <!-- <p class="text-gray-400 mb-4">Fragrant biryani with tender meat and raita</p> -->
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Thursday</div>
+                                <img src="./img/4.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Thursday menu">
+                                <h3 class="text-xl font-semibold mb-2">Bagara Rice, Dalcha</h3>
+                                <!-- <p class="text-gray-400 mb-4">Assorted breads with curry and dal makhani</p> -->
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Friday</div>
+                                <img src="./img/5.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Friday menu">
+                                <h3 class="text-xl font-semibold mb-2"> Dal Rice, Shamiya</h3>
+                                <!-- <p class="text-gray-400 mb-4">Fresh fruits, nuts, dates with honey</p> -->
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Saturday</div>
+                                <img src="./img/6.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Saturday menu">
+                                <h3 class="text-xl font-semibold mb-2">Rice, Tomato Curry, Boiled Eggs</h3>
+                                <!-- <p class="text-gray-400 mb-4">Poori bhaji with special sweet dish</p> -->
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card min-w-[300px] w-full p-4">
+                            <div class="bg-opacity-10 bg-white rounded-lg p-6 h-full flex flex-col">
+                                <div class="text-secondary text-lg mb-4">Sunday</div>
+                                <img src="./img/7.png" class="w-full h-48 object-cover rounded-lg mb-4"
+                                    alt="Sunday menu">
+                                <h3 class="text-xl font-semibold mb-2">Rice, Dahi Curry, Bhajiye</h3>
+                                <!-- <p class="text-gray-400 mb-4">Mixed platter with Indian and continental items</p> -->
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary text-xl">₹199</span>
+                                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="bg-secondary text-primary px-4 py-2 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform font-['Inter'] font-semibold whitespace-nowrap">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="scrollMenu('left')"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary bg-opacity-50 p-2 rounded-full hover:bg-opacity-75">
+                    <i class="ri-arrow-left-s-line ri-2x"></i>
+                </button>
+                <button onclick="scrollMenu('right')"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary bg-opacity-50 p-2 rounded-full hover:bg-opacity-75">
+                    <i class="ri-arrow-right-s-line ri-2x"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="py-20 bg-opacity-10 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div
+                    class="text-center float-animation hover:scale-105 transition-transform duration-300 p-8 rounded-lg bg-white bg-opacity-5">
+                    <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                        <i class="ri-time-line ri-3x text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Fast and Hot Delivery</h3>
+                    <p class="text-gray-400">Order before 12 AM, get your Sehri by 3 AM, guaranteed.</p>
+                </div>
+                <div
+                    class="text-center float-animation hover:scale-105 transition-transform duration-300 p-8 rounded-lg bg-white bg-opacity-5">
+                    <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                        <i class="ri-heart-line ri-3x text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Home-Style Cooking</h3>
+                    <p class="text-gray-400">Authentic recipes prepared with love by expert home chefs.</p>
+                </div>
+                <div
+                    class="text-center float-animation hover:scale-105 transition-transform duration-300 p-8 rounded-lg bg-white bg-opacity-5">
+                    <div class="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                        <i class="ri-shield-check-line ri-3x text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">100% Hygienic</h3>
+                    <p class="text-gray-400">We make sure each meal is prepared with hygiene and cleaniness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="plans" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Subscription Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-opacity-10 bg-white rounded-lg p-8 border border-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Single Meal</h3>
+                    <div class="text-4xl font-bold mb-6">
+                        <span class="text-secondary">₹199</span>
+                        <span class="text-sm text-gray-400">/meal</span>
+                    </div>
+                    <ul class="mb-8 space-y-4">
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Fresh, hot delivery
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            No commitment required
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Premium packaging
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+918074450412?text=Hey%20I%20want%20to%20order%20Sehri" target="_blank" class="block w-full bg-secondary text-primary py-3 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform duration-300 font-['Inter'] font-semibold text-center whitespace-nowrap">
+                        Choose Plan
+                        </a>
+                </div>
+                <div class="bg-opacity-10 bg-white rounded-lg p-8 border-2 border-secondary relative">
+                    <div class="absolute -top-4 right-4 bg-secondary text-primary px-4 py-1 rounded-full text-sm">
+                        Popular</div>
+                    <h3 class="text-2xl font-semibold mb-4">2 Week Plan</h3>
+                    <div class="text-4xl font-bold mb-6">
+                        <span class="text-secondary">₹3000</span>
+                        <span class="text-sm text-gray-400"></span>
+                    </div>
+                    <ul class="mb-8 space-y-4">
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            15 days subscription
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Priority delivery
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Menu customization
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Premium packaging
+                        </li>
+                    </ul>
+                    <a href="https://form.jotform.com/240465778049467" target="_blank" class="block w-full bg-secondary text-primary py-3 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform duration-300 font-['Inter'] font-semibold text-center whitespace-nowrap">
+                        Choose Plan
+                        </a>
+                </div>
+                <div
+                    class="bg-opacity-10 bg-white rounded-lg p-8 border border-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all duration-300">
+                    <div class="absolute -top-4 right-4 bg-secondary text-primary px-4 py-1 rounded-full text-sm">
+                        Popular</div>
+                    <h3 class="text-2xl font-semibold mb-4">Monthly Plan</h3>
+                    <div class="text-4xl font-bold mb-6">
+                        <span class="text-secondary">₹5699</span>
+                        <span class="text-sm text-gray-400">(Early Offer)</span>
+                    </div>
+                    <ul class="mb-8 space-y-4">
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            30 days subscription
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Menu Customization Perk
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Delivery Priority
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-check-line text-secondary mr-2"></i>
+                            Premium packaging
+                        </li>
+                    </ul>
+                    <a href="https://form.jotform.com/240465778049467" target="_blank" class="block w-full bg-secondary text-primary py-3 !rounded-button hover:bg-opacity-90 hover:scale-105 transition-transform duration-300 font-['Inter'] font-semibold text-center whitespace-nowrap">
+                        Choose Plan
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="py-20 bg-opacity-5 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            <div class="relative">
+                <div class="overflow-hidden">
+                    <div id="testimonials-slider" class="flex transition-transform duration-500 ease-in-out">
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-white bg-opacity-5 p-8 rounded-lg border border-secondary/20">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+                                        <i class="ri-user-line text-secondary"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Simrah Munazza Ikram</h4>
+                                        <div class="flex text-secondary">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400">"Rozdaar tareef kar diye! Behtareen hai bole! Alhamdulillah!
+                                    Hamaare Mamma har dish ko 10/10 diye!"</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-white bg-opacity-5 p-8 rounded-lg border border-secondary/20">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+                                        <i class="ri-user-line text-secondary"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Alisha Shaikh (hostel student)</h4>
+                                        <div class="flex text-secondary">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400">"Liked the taste Alhumdulillah, and the better food I have
+                                    eaten for Sehri since the start, Jazakallah. The taste resembled similar to my home"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+                            <div class="bg-white bg-opacity-5 p-8 rounded-lg border border-secondary/20">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+                                        <i class="ri-user-line text-secondary"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Zeshan Ahmed</h4>
+                                        <div class="flex text-secondary">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400">"Alhumdulillah fulfilling and worth the pricing"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="flex justify-center mt-8 space-x-4">
+                <button onclick="moveTestimonials('prev')"
+                    class="bg-secondary text-primary w-12 h-12 rounded-full flex items-center justify-center hover:bg-opacity-90 transition-all">
+                    <i class="ri-arrow-left-s-line ri-lg"></i>
+                </button>
+                <button onclick="moveTestimonials('next')"
+                    class="bg-secondary text-primary w-12 h-12 rounded-full flex items-center justify-center hover:bg-opacity-90 transition-all">
+                    <i class="ri-arrow-right-s-line ri-lg"></i>
+                </button>
+            </div> -->
+        </div>
+        </div>
+    </section>
+    <footer class="bg-primary border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <img src="img\Sehri.in (1).png" alt="Sehri.in Logo" class="h-[80px] mb-4">
+                    <p class="text-gray-400">From the house of mothers, cooked with love with a hint of mother's magic
+                        Sehri.in delivers food at your doorstep.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-secondary">home</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-secondary">Menu</a></li>
+                        <li><a href="#why-us" class="text-gray-400 hover:text-secondary">Why choose us?</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-secondary">Testimonials</a></li>
+                        <li><a href="#plans" class="text-gray-400 hover:text-secondary">Plans</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <a href="tel:+918074450412" class="flex items-center hover:text-secondary">
+                                <i class="ri-phone-line mr-2"></i>
+                                +91 80744 50412
+                            </a>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <a href="mailto:team@sehri.in" class="flex items-center hover:text-secondary">
+                                <i class="ri-mail-line mr-2"></i>
+                                info@sehri.in
+                            </a>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="ri-map-pin-line mr-2"></i>
+                            Hyderabad, India
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/sehri.in_?igsh=MzRlODBiNWFlZA==" class="text-gray-400 hover:text-secondary transition-colors">
+                            <i class="ri-instagram-line ri-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/sehri-in/" class="text-gray-400 hover:text-secondary transition-colors">
+                            <i class="ri-linkedin-line ri-lg"></i>
+                        </a>
+                        <a href="https://x.com/Sehri_in?t=KjZwvPNTz8qwf614p_NXsA&s=09" class="text-gray-400 hover:text-secondary transition-colors">
+                            <i class="ri-twitter-line ri-lg"></i>
+                        </a>
+                        <a href="https://wa.me/+918074450412" class="text-gray-400 hover:text-secondary transition-colors">
+                            <i class="ri-whatsapp-line ri-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>Developed By <a href="https://adilogram.com">Adilogram.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Menu slider
+        function scrollMenu(direction) {
+            const container = document.querySelector('.overflow-x-auto');
+            const scrollAmount = container.clientWidth / 2;
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('glass-effect');
+            } else {
+                header.classList.remove('glass-effect');
+            }
+        });
+        // Menu slider
+        function scrollMenu(direction) {
+            const container = document.querySelector('.overflow-x-auto');
+            const scrollAmount = 300;
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        // Testimonials slider
+        let currentTestimonial = 0;
+        const testimonialSlider = document.getElementById('testimonials-slider');
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        const totalTestimonials = testimonialCards.length;
+        function moveTestimonials(direction) {
+            if (direction === 'next') {
+                currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+            } else {
+                currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+            }
+            const offset = currentTestimonial * -100;
+            testimonialSlider.style.transform = `translateX(${offset}%)`;
+        }
+        // Initialize testimonials for mobile
+        function initTestimonials() {
+            const isMobile = window.innerWidth < 768;
+            testimonialCards.forEach(card => {
+                card.style.width = isMobile ? '100%' : '33.333%';
+            });
+        }
+        window.addEventListener('resize', initTestimonials);
+        initTestimonials();
+        // Add custom styles for hiding scrollbar
+        const style = document.createElement('style');
+        style.textContent = `
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.no-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}`;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
